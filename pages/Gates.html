@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../tailwind.js"></script>
+    <script src="../flowbite.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://circuitverse.org/assets/homepage/combinations%20analysis-0998259ff3f76fb666da45ef6b9cca15503940bcbae7f900778b5b27301ebeb8.png"
+    />
+    <script src="../flowbite.js"></script>
+    <title>Logic Gates</title>
+  </head>
+  <body>
+    <!--------------- navbar Start --------------->
+    <nav class="bg-white border-gray-200 dark:bg-[#273430]">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="https://circuitverse.org/assets/homepage/combinations%20analysis-0998259ff3f76fb666da45ef6b9cca15503940bcbae7f900778b5b27301ebeb8.png"
+            class="h-8" alt="Flowbite Logo" />          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Logical Gates</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 ">
+            <li>
+              <a href="../index.html" class="block py-2 px-3 text-gray-900  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
+                " aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="Gates.html"
+                class="block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Gates</a>
+            </li>
+            <li>
+              <a href="Project.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Project</a>
+            </li>
+            <li>
+              <a href="Team.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <!--------------- navbar End --------------->
+    <!--------------- body Start --------------->
+    <!-- component -->
+  
+  
+    <div class="container mx-auto">
+      <section id="" class=" flex flex-col">
+        <video class="mx-auto mt-[1rem] mb-[2rem]"
+          src="img/Still Here - Season 2024 Cinematic - League of Legends (ft. Forts, Tiffany Aris, and 2WEI).mp4"
+          controls="" muted="" width="98%"></video>
+        <hr class="w-48 h-1 mx-auto my-4 bg-[#273430] border-0 rounded md:my-10 ">
+        <h1 class="text-[2rem] font-bold text-center">
+          Before yo go ahead and Navigate Thruogh Logic Gates please understand...
+        </h1>
+        <ul class="">
+          <li class="text-[1.5rem] mx-[4rem] mt-[1rem] mb-[2rem]">
+            <span class="font-bold">Inputs:</span> All logic gates require some
+            kind of input value so that they have numbers to compare. These
+            figures come in the form of voltages. When your input voltage is 0V,
+            then it's considered to be low, or 0. And when you have a voltage of
+            5V as an input, then this is deemed to be high, or 1.
+          </li>
+          <li class="text-[1.5rem] mx-[4rem] mt-[1rem] mb-[2rem]">
+            <span class="font-bold">Outputs:</span> Once a logic gate has a chance
+            to process your input, it can then make a decision on whether to open
+            its gate or keep it closed. This output is entirely determined by the
+            type of logic gate you're using, and some will only open if you have
+            two high voltages as an input, whereas others will only open if you
+            have a low voltage but not a high voltage as an input.
+          </li>
+        </ul>
+  
+        <hr class="w-48 h-1 mx-auto my-4  border-0 rounded md:my-10 bg-[#273430]">
+        <div class="flex flex-col flex-wrap lg:flex-row mb-6 justify-around space-y-5 mx-auto md:w-[1150px]">
+          <a href="gates/AND gate11.html"
+            class="group mt-5 bg-[#273430] relative m-0 flex h-72 w-[420px] rounded-xl shadow-xl  ring-gray-900/5 sm:mx-auto sm:max-w-lg">
+            <div
+              class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+              <img src="../img/Gates/and.png"
+                class="animate-fade-in block h-full w-full p-5 scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                alt="">
+            </div>
+            <div
+              class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+              <h1 class="font-serif text-2xl font-bold text-white shadow-xl">AND</h1>
+            </div>
+          </a>
+  
+          <a href="gates/NAND.html"
+            class="group  relative m-0 flex h-72 bg-[#273430]  w-[420px] rounded-xl shadow-xl  ring-gray-900/5 sm:mx-auto sm:max-w-lg">
+            <div
+              class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+              <img src="../img/Gates/nand.png"
+                class="animate-fade-in block h-full w-full p-5 scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                alt="">
+            </div>
+            <div
+              class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+              <h1 class="font-serif text-2xl font-bold text-white shadow-xl">NAND</h1>
+            </div>
+          </a>
+  
+          <a href="gates/OR.html"
+            class="group  relative m-0 flex h-72 bg-[#273430] w-[420px] rounded-xl shadow-xl  ring-gray-900/5 sm:mx-auto sm:max-w-lg">
+            <div
+              class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+              <img src="../img/Gates/or.png"
+                class="animate-fade-in block h-full w-full p-5 scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                alt="">
+            </div>
+            <div
+              class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+              <h1 class="font-serif text-2xl font-bold text-white shadow-xl">OR</h1>
+            </div>
+          </a>
+  
+          <a href="gates/XOR.html"
+            class="group  relative m-0 flex h-72 w-[420px] bg-[#273430]  rounded-xl shadow-xl  ring-gray-900/5 sm:mx-auto sm:max-w-lg">
+            <div
+              class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+              <img src="../img/Gates/xor.png"
+                class="animate-fade-in block h-full w-full p-5 scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                alt="">
+            </div>
+            <div
+              class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+              <h1 class="font-serif text-2xl font-bold text-white shadow-xl">XOR</h1>
+            </div>
+          </a>
+  
+          <a href="gates/NOR.html"
+            class="group  relative m-0 flex h-72 bg-[#273430] w-[420px] rounded-xl shadow-xl  ring-gray-900/5 sm:mx-auto sm:max-w-lg">
+            <div
+              class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+              <img src="../img/Gates/nor.png"
+                class="animate-fade-in block h-full w-full p-5 scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                alt="">
+            </div>
+            <div
+              class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+              <h1 class="font-serif text-2xl font-bold text-white shadow-xl">NOR</h1>
+            </div>
+          </a>
+  
+          <a href="gates/XNOR.html"
+            class="group  relative m-0 flex h-72 bg-[#273430]  w-[420px] rounded-xl shadow-xl  ring-gray-900/5 sm:mx-auto sm:max-w-lg">
+            <div
+              class="z-10 h-full w-full p-8 overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+              <img src="../img/Gates/2560px-XNOR_ANSI.svg.png"
+                class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                alt="">
+            </div>
+            <div
+              class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+              <h1 class="font-serif text-2xl font-bold text-white shadow-xl">XNOR</h1>
+            </div>
+          </a>
+  
+          <a href="gates/NOT.html"
+            class="group  relative m-0 flex h-72 bg-[#273430] w-[420px] rounded-xl shadow-xl  ring-gray-900/5 sm:mx-auto sm:max-w-lg">
+            <div
+              class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+              <img src="../img/Gates/not.png"
+                class="animate-fade-in block h-full w-full p-5 scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                alt="">
+            </div>
+            <div
+              class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+              <h1 class="font-serif text-2xl font-bold text-white shadow-xl">NOT</h1>
+            </div>
+          </a>
+  
+          <a href="gates/FULL-ADDER.html"
+            class="group  relative m-0 flex h-72 w-[420px] bg-[#273430]  rounded-xl shadow-xl  ring-gray-900/5 sm:mx-auto sm:max-w-lg">
+            <div style=" width: inherit;"
+              class="z-10 flex justify-center overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+              <img src="../img/Gates/full-adder.png"
+                class="animate-fade-in block  scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                alt="">
+            </div>
+            <div
+              class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+              <h1 class="font-serif text-2xl font-bold text-white shadow-xl">FULL ADDER</h1>
+            </div>
+          </a>
+  
+          <a href="gates/half-adder.html"
+            class="group  relative m-0 flex h-72 w-[420px] bg-[#273430]  rounded-xl shadow-xl  ring-gray-900/5 sm:mx-auto sm:max-w-lg">
+            <div
+              class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+              <img src="../img/Gates/Half_Adder_Symbol.svg.png"
+                class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                alt="">
+            </div>
+            <div
+              class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+              <h1 class="font-serif text-2xl font-bold text-white shadow-xl">Half ADDER</h1>
+            </div>
+          </a>
+  
+          <a href="gates/JK-F-F.html"
+            class="group  relative m-0 flex h-72  bg-[#273430] w-[420px] rounded-xl shadow-xl  ring-gray-900/5 sm:mx-auto sm:max-w-lg">
+            <div style="width: inherit; display: flex; justify-content: center;"
+              class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
+              <img src="../img/Gates/JK_Flip-flop_(Simple)_Symbol.svg.png"
+                class="animate-fade-in block  scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+                alt="">
+            </div>
+            <div
+              class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+              <h1 class="font-serif text-2xl font-bold text-white shadow-xl">JK-Type</h1>
+            </div>
+          </a>
+  
+  
+        </div>
+      </section>
+    </div>
+  
+    <!--------------- body End --------------->
+  
+    <!-- -----------Footer Start----------- -->
+    <!-- Names Start-------------- -->
+    <footer class="bg-[#273430] text-white py-[20px]">
+      <div class="flex flex-row justify-around leading-relaxed">
+        <div id="leader">
+          <h3 class="font-bold text-[1rem] text-[#75d8bc]">Leader</h3>
+          <h2 class="">Mohamed Elsify</h2>
+        </div>
+        <div id="emplementers">
+          <h2 class="font-bold text-[1rem] text-[#75d8bc]">
+            Project Implementers
+          </h2>
+          <ul type="1">
+            <li>Osama Hamada</li>
+            <li>Esraa Fayez</li>
+            <li>Kero</li>
+            <li>Mohamed Abo Arab</li>
+            <li>Rehab</li>
+          </ul>
+        </div>
+        <div id="Website">
+          <h2 class="font-bold text-[1rem] text-[#75d8bc]">Website</h2>
+          <ul type="1">
+            <li>Aya</li>
+            <li>Donia</li>
+            <li>Kareem</li>
+            <li>Mahmoud Al-Amouri</li>
+            <li>Yousif Zaki</li>
+          </ul>
+        </div>
+        <div id="catalog">
+          <h2 class="font-bold text-[1rem] text-[#75d8bc]">Catalog</h2>
+          <ul type="1">
+            <li>Emaan Amr</li>
+            <li>Mohamed Ebrahim</li>
+          </ul>
+        </div>
+        <div id="Video ">
+          <h2 class="font-bold text-[1rem] text-[#75d8bc]">Video</h2>
+          <ul type="1">
+            <li>Asmaa</li>
+          </ul>
+        </div>
+        <!-- Names End-------------- -->
+  
+        <!-- Social Media  Start------------->
+        <div class="w-[180px]" id="social">
+          <img width="80px" height="80px" src="../img/logo.png" alt="Logo">
+          <div class="flex flex-row justify-around">
+            <a href="#"><img src="../img/youtube-line.png" width="30px" alt="Youtube"></a>
+            <a href="#"><img src="../img/facebook-circle-line.png" width="30px" alt="Facebook"></a>
+            <a href="#"><img src="../img/instagram-line.png" width="30px" alt="Instagram"></a>
+            <a href="#"><img src="../img/twitter-x-line (1).png" width="30px" alt="Twitter"></a>
+          </div>
+        </div>
+        <!-- Social Media  End------------->
+      </div>
+    </footer>
+    <!-- -----------Footer End----------- -->
+  
+    <!-- <script src="/dist/script.js"></script> -->
+  
+  </body>
+  <!-- <script src="/dist/script.js"></script> -->
+</html>

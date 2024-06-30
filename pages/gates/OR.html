@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="../../flowbite.js"></script>
+  <script src="../../../tailwind.js"></script>
+  <link rel="icon" type="image/x-icon"
+    href="https://circuitverse.org/assets/homepage/combinations%20analysis-0998259ff3f76fb666da45ef6b9cca15503940bcbae7f900778b5b27301ebeb8.png" />
+  <title>Logic Gates</title>
+</head>
+
+<body>
+  <!--------------- navbar Start --------------->
+  <nav class="bg-white border-gray-200 dark:bg-[#273430]">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="../../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img
+          src="https://circuitverse.org/assets/homepage/combinations%20analysis-0998259ff3f76fb666da45ef6b9cca15503940bcbae7f900778b5b27301ebeb8.png"
+          class="h-8" alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Logical Gates</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 ">
+          <li>
+            <a href="../../index.html" class="block py-2 px-3 text-gray-900  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
+                      " aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="../Gates.html"
+              class="block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Gates</a>
+          </li>
+          <li>
+            <a href="../Project.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Project</a>
+          </li>
+          <li>
+            <a href="../Team.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--------------- navbar End --------------->
+  
+  <div class="container mx-auto">
+    <section id="sec" class="flex flex-col">
+      <h1 class="text-[40px] font-bold my-3 text-center  border-spacing-7 bg-gradient-to-r from-emerald-700 shadow-lg shadow-black"> OR   GATE </h1>
+      <!------------ definition ------------>
+      <p class="text-[1.3rem] px-[1.2rem] text-justify my-1 font-bold mt-7">
+       The OR gate is a digital logic gate that implements logical disjunction.
+       The OR gate outputs "true" if any of its inputs are "true"; otherwise it outputs "false".
+       The input and output states are normally represented by different voltage levels.
+
+      </p>
+      <p class="text-[1.3rem] px-[1.2rem] text-justify my-1 font-bold mt-5">
+        OR gates, along with other logic gates, can be combined to perform more complex calculations.
+         Such combinations are commonly used in electronic circuits.
+      </p>
+      <div class="hr"></div>
+
+      <!------------- diagram ------------->
+      <div>
+        <h2
+          class="text-[1.8rem] text-center my-2 mx-auto dark:bg-[#273430] text-white rounded-md px-[1.4rem] py-[1rem]">
+          Diagram
+        </h2>
+        <p class="text-xl  text-left font-bold ml-5  mb-5 shadow-md shadow-emerald-600 w-2/4 " > The symbol  representation  for an  OR  gate  with two input is : </p>
+        <p class="text-[1.3rem] px-[1.2rem] text-justify my-1 font-bold mt-7 mb-11">
+          The output, Q of a “Logic OR Gate” only returns “LOW” again when ALL of its inputs are at a logic level “0”.
+           In other words for a logic OR gate, any “HIGH” input will give a “HIGH”, logic level “1” output.
+        </p>
+        <img class="mx-auto" width="400px"  src="/img/OR GATE/2-input-OR-gate.png" alt="Diagram  mt-12   "  />
+        <p class="text-xl  text-left font-bold ml-5  shadow-md shadow-emerald-600 mt-12 w-2/4 " >The symbol  representation for an OR gate  circuit diagram is : </p>
+      </div>
+      <div class="hr"></div>
+      <!------------ Circuit ------------>
+      <p class="text-[1.3rem] px-[1.2rem] text-justify my-2 font-bold mt-7 mb-10 ">
+        
+        The transistors here are arranged in parallel and their bases are adopted as input. 
+        Initially when both the inputs are at logic low both the transistors turn off 
+        and go into their cutoff state acting as an open switch which further leads to the output as active low/logic 0.
+      </p>
+      <div class="flex justify-center  ">
+        <img class="mx-auto" width="380px"  src="/img/OR GATE/or gate circuit.jpg" alt="Diagram  mt-4 "  />
+      </div>
+      <p class="text-[1.3rem] px-[1.2rem] text-justify my-2 font-bold mt-7 mb-10 ">
+        The function of a logical OR gate efficiently finds the maximum between two binary digits, 
+        just as the complementary AND function determines the minimum and generates the output accordingly.
+      </p>
+      <p class="text-[1.3rem] px-[1.2rem] text-justify my-2 font-bold mt-10 text-xl shadow-emerald-600 shadow-md w-2/12  mb-5">
+        It's truth table :
+      </p>
+      <p class="text-[1.3rem] px-[1.2rem] text-justify my-2 font-bold mt-7 mb-10 ">
+        The truth table for three input OR Gate is as shown:
+      </p>
+      <!-- ---------Truth Table--------- -->
+      <div class="hr"></div>
+      <!-- <div class=" lg:w-[1000p] flex justify-center overflow-x-auto shadow-md sm:rounded-lg mb-5 "> -->
+        <table class="w-full lg:w-[1000px]  mx-auto text-center text-[25px] text-gray-500 rounded-lg dark:text-gray-400 mb-5">
+          <thead class="text-[30px] text-gray-700 uppercase dark:text-gray-400 dark:border-gray-700">
+            <tr >
+              <th scope="col" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+                a
+              </th>
+              <th scope="col" class="px-6 py-3 font-medium text-black dark:border-gray-700">
+                b
+              </th>
+              <!-- <th scope="col" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+              c
+              </th> -->
+              <th scope="col" class="px-6 py-3 font-medium  shadow-emerald-600 shadow-sm  dark:bg-gray-800">
+                Out
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+              <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                0
+              </th>
+              <td class="px-6 py-4 font-medium text-black ">
+                0
+              </td>
+              <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                0
+              </td>
+              <!-- <td class="px-6 py-4 font-medium text-black">
+                0
+              </td> -->
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+              <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                0
+              </th>
+              <td class="px-6 py-4 font-medium text-black">
+                0
+              </td>
+              <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                1
+              </td>
+              <!-- <td class="px-6 py-4 font-medium text-black">
+                1
+              </td> -->
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+              <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                0
+              </th>
+              <td class="px-6 py-4 font-medium text-black">
+                1
+              </td>
+              <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                0
+              </td>
+              <!-- <td class="px-6 py-4 font-medium text-black">
+                1
+              </td> -->
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+              <th scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                0
+              </th>
+              <td class="px-6 py-4 font-medium text-black">
+                1
+              </td>
+              <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                1
+              </td>
+              <!-- <td class="px-6 py-4 font-medium text-black">
+                1
+              </td> -->
+            </tr>
+            
+          </tbody>
+        </table>
+      <!-- </div> -->
+      <div class="font-bold"></div>
+      
+      <h1 class="text-left font-bold mb-11  text-xl  ">
+        The output of a three-input OR Logic gate is zero if all the three inputs
+        are at logic zero levels on the other hand the output is one if anyone/two/ three inputs are at logic high.
+      </h1>
+      <div class="w-full flex justify-center mb-11  ">
+        <img class=" mx-auto" width="700px" src="/img/OR GATE/OR GATE 3.png">
+      </div>
+      <p class="text-[1.3rem] text-left shadow-md shadow-emerald-600   my-4 font-bold text-2xl w-2/5">
+           The Boolean expression of OR gate with 3 input  :
+      </p>
+      <!-- ---------Equation--------- -->
+      <div class=" font-bold text-xl text-center mb-7 shadow-sm shadow-zinc-700 w-2/12 mt-9 ml-36 bg-slate-50 "> Y = A+B+C</div>
+      <p class=" text-start font-bold text-xl">
+        The Boolean expression of the logic OR gate is represented as the binary operation addition (+)
+         Where A, B, and C are the inputs and Y is the output.
+      </p>
+  <!--------------- body Start --------------->
+  
+      <div class="hr"></div>
+      <!--       ------ apply the gate on the device------ -->
+      <h2 class="text-[1.8rem] text-center my-2 dark:bg-[#273430] text-white rounded-md px-[1.4rem] py-[1rem]">
+        how to apply the gate on the device
+      </h2>
+      <img src="" alt="" />
+      <p></p>
+    </section>
+  </div>
+
+  <!--------------- body End --------------->
+
+  <!-- -----------Footer Start----------- -->
+  <!-- Names Start-------------- -->
+  <footer class="bg-[#273430] text-white py-[20px]">
+    <div class="flex flex-row justify-around leading-relaxed">
+      <div id="leader">
+        <h3 class="font-bold text-[1rem] text-[#75d8bc]">Leader</h3>
+        <h2 class="">Mohamed Elsify</h2>
+      </div>
+      <div id="emplementers">
+        <h2 class="font-bold text-[1rem] text-[#75d8bc]">
+          Project Implementers
+        </h2>
+        <ul type="1">
+          <li>Osama Hamada</li>
+          <li>Esraa Fayez</li>
+          <li>Kero</li>
+          <li>Mohamed Abo Arab</li>
+          <li>Rehab</li>
+        </ul>
+      </div>
+      <div id="Website">
+        <h2 class="font-bold text-[1rem] text-[#75d8bc]">Website</h2>
+        <ul type="1">
+          <li>Aya</li>
+          <li>Donia</li>
+          <li>Kareem</li>
+          <li>Mahmoud Al-Amouri</li>
+          <li>Yousif Zaki</li>
+        </ul>
+      </div>
+      <div id="catalog">
+        <h2 class="font-bold text-[1rem] text-[#75d8bc]">Catalog</h2>
+        <ul type="1">
+          <li>Emaan Amr</li>
+          <li>Mohamed Ebrahim</li>
+        </ul>
+      </div>
+      <div id="Video ">
+        <h2 class="font-bold text-[1rem] text-[#75d8bc]">Video</h2>
+        <ul type="1">
+          <li>Asmaa</li>
+        </ul>
+      </div>
+      <!-- Names End-------------- -->
+
+      <!-- Social Media  Start------------->
+      <div class="w-[180px]" id="social">
+        <img width="80px" height="80px" src="/dist/img/logo.png" alt="Logo" />
+        <div class="flex flex-row justify-around">
+          <a href="#"><img src="/dist/img/youtube-line.png" width="30px" alt="Youtube" /></a>
+          <a href="#"><img src="/dist/img/facebook-circle-line.png" width="30px" alt="Facebook" /></a>
+          <a href="#"><img src="/dist/img/instagram-line.png" width="30px" alt="Instagram" /></a>
+          <a href="#"><img src="/dist/img/twitter-x-line (1).png" width="30px" alt="Twitter" /></a>
+        </div>
+      </div>
+      <!-- Social Media  End------------->
+    </div>
+  </footer>
+  <!-- -----------Footer End----------- -->
+
+  <script src="/dist/script.js"></script>
+</body>
+
+</html>
+
+<script src="/dist/script.js"></script>
+
+</html>
+
+</body>
+
+</html>
